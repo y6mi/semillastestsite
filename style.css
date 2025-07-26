@@ -1,0 +1,153 @@
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+
+:root {
+  --green: #8BC34A;
+  --orange: #F57C00;
+  --white: #ffffff;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  border-bottom: 2px solid var(--orange);
+  z-index: 1000;
+}
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+.logo {
+  color: var(--orange);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: var(--green);
+}
+
+
+.hero {
+  height: 100vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+.hero-overlay h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: var(--orange);
+}
+.hero-overlay p {
+  font-size: 18px;
+  color: var(--green);
+}
+
+
+.section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--orange);
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.menu-item {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+  border: 1px solid var(--green);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.menu-item h3 {
+  color: var(--green);
+}
+.menu-item p {
+  color: #ccc;
+}
+.menu-item:hover {
+  transform: scale(1.05);
+  background: #1c1c1c;
+  border-color: var(--orange);
+}
+
+.hero-logo {
+  margin-top: 20px;
+  max-height: 120px;
+  width: auto;
+}
+.review-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ddd;
+  text-align: justify;
+}
+.review-text p {
+  margin-bottom: 15px;
+}
+.menu-category {
+  margin-bottom: 60px;
+}
+
+.menu-category-title {
+  font-size: 26px;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--orange);
+  padding-left: 10px;
+}
+
+.menu-item h4 {
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: 8px;
+}
